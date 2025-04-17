@@ -130,7 +130,13 @@ class LoginView extends StatelessWidget {
                           width: 100,
                           height: 70,
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text("Google sign in clicked."),
+                                ),
+                              );
+                            },
                             icon: const Icon(FontAwesomeIcons.google),
                           ),
                         ),
@@ -142,7 +148,13 @@ class LoginView extends StatelessWidget {
                           width: 100,
                           height: 70,
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text("Facebook sign in clicked."),
+                                )
+                              );
+                            },
                             icon: const Icon(FontAwesomeIcons.facebook),
                           ),
                         ),
@@ -154,7 +166,13 @@ class LoginView extends StatelessWidget {
                           width: 100,
                           height: 70,
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text("X sign in clicked."),
+                                )
+                              );
+                            },
                             icon: const Icon(FontAwesomeIcons.xTwitter),
                           ),
                         ),
